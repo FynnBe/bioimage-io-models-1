@@ -37,7 +37,7 @@ jobs:
           name: built-output
           path: ./
 
-      - name: verify bioimageio manifest
+      - name: Verify bioimageio manifest
         run: |
           pip install git+https://github.com/bioimage-io/python-bioimage-io.git
           python -m pybio.spec verify-bioimageio-manifest manifest.bioimage.io.yaml
